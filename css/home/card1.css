@@ -1,0 +1,197 @@
+.details {
+  margin: 20px 0;
+  padding: 30px 20px;
+  position: relative;
+  z-index: 1;
+  border-radius: 4px;
+  height: 300px;
+  text-align: center;
+}
+
+.areas-atuacao-bg::after {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+/*------------------------------------------------------------------ TODOS OS DIREITOS ---------------------------------------------------------------*/
+#DireitoCivil {
+  background: url(https://th.bing.com/th/id/OIG1.LNqVsKMNFG2TEiuGMi8X?pid=ImgGn) center no-repeat;
+  background-size: cover;
+}
+
+#DireitoImobiliario {
+  background: url(https://th.bing.com/th/id/OIG1.ASpe5iHDd2oh6AkEV30Q?pid=ImgGn) center no-repeat;
+  background-size: cover;
+}
+
+#DireitoMedico {
+  background: url(https://th.bing.com/th/id/OIG2.fXohIxV8ooNO9Q.sCofj?pid=ImgGn) center no-repeat;
+  background-size: cover;
+}
+
+#DireitoTrabalhista {
+  background: url(https://th.bing.com/th/id/OIG4.avSf1_QeMqeV3AgVdqs7?w=1024&h=1024&rs=1&pid=ImgDetMain) center no-repeat;
+  background-size: cover;
+}
+
+#DireitoTributarioFiscal {
+  background: url(https://th.bing.com/th/id/OIG1.6b2vA6MBT8txmCvmEUwJ?pid=ImgGn) center no-repeat;
+  background-size: cover;
+}
+
+#DireitoAmbiental {
+  background: url(https://th.bing.com/th/id/OIG2.p9YnSerJ5IKvXRTES7Lt?w=1024&h=1024&rs=1&pid=ImgDetMain) center no-repeat;
+  background-size: cover;
+}
+
+#DireitoAgronegocio {
+  background: url(https://th.bing.com/th/id/OIG3.91oPyybtYmrMZD24HhF.?pid=ImgGn) center no-repeat;
+  background-size: cover;
+}
+
+#DireitoPropriedadeIntelectual {
+  background: url(https://th.bing.com/th/id/OIG4.Q1K2PzHfC9tfSkhmI8Vh?pid=ImgGn) center no-repeat;
+  background-size: cover;
+}
+
+#DireitoConstitucional {
+  background: url(https://th.bing.com/th/id/OIG2.CqfgrqX1q_LBXmNygNev?pid=ImgGn) center no-repeat;
+  background-size: cover;
+}
+
+#DireitoAdministrativo {
+  background: url(https://th.bing.com/th/id/OIG3.AGHHrlP.4AyqH60HB0dK?w=1024&h=1024&rs=1&pid=ImgDetMain) center no-repeat;
+  background-size: cover;
+}
+
+#DireitoPenal {
+  background: url(https://th.bing.com/th/id/OIG3.tCFmzWT8im7.7vOD9L33?pid=ImgGn) center no-repeat;
+  background-size: cover;
+}
+
+#DireitoResponsabilidadeSocial {
+  background: url(https://th.bing.com/th/id/OIG3.0XYvsMBZAZYNcFMjBVt0?pid=ImgGn) center no-repeat;
+  background-size: cover;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.details h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: 0.6s all;
+  color: white;
+  background-color: #000000a8;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 6px 8px;
+}
+
+.details:hover h2 {
+  background-color: #000000;
+  border-radius: 4px;
+  color: white;
+  transition: 0.6s all;
+}
+
+.details p {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  color: transparent;
+  transition: 0.6s all;
+  margin-bottom: 20px;
+}
+
+.details a {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  background: transparent;
+  color: transparent;
+  font-size: 14px;
+  padding: 6px 12px;
+  display: inline-block;
+}
+
+.details:hover a.vermais{
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 6px 12px;
+  display: inline-block;
+  transition: 0.5s all;
+  background-color: #000000a8;
+
+}
+
+.details::before {
+  content: "";
+  height: 5px;
+  width: 100%;
+  background-color: #6894b3;
+  opacity: 0.9;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.6s all;
+  border: radius 10px;
+}
+
+.details:hover::before {
+  height: 100%;
+  transition: 0.6s all;
+}
+
+.details:hover p {
+  color: #000000;
+}
+
+@media (max-width: 600px) {
+  .details {
+    padding: 15px 10px;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .details h2 {
+    font-size: 1.2rem;
+    padding: 4px 6px;
+  }
+
+  .details p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .details a {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .details {
+    padding: 10px 5px;
+  }
+
+  .details h2 {
+    font-size: 1rem;
+  }
+
+  .details p {
+    font-size: 0.8rem;
+  }
+
+  .details a {
+    font-size: 0.8rem;
+    padding: 3px 6px;
+  }
+}

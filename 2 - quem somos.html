@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <!------------------------------------- Dar atençao aqui -------------------------------->
+  <title>QUEM SOMOS | RVL ADVOGADOS ASSOCIADOS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="imagex/png" href="img/LOGOS/logo.png">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+    defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+</head>
+
+<!---------------------------------------------------------------- MENU ----------------------------------------------------------------->
+
+<body>
+  <div class="quem-somos-bg">
+    <header id="scrollar" class="header container active">
+      <a href="1 - index.html">
+        <img class="logo" width="100px" src="img/logos/logo.png" alt="Logo RVL">
+      </a>
+      <nav class="menu">
+        <ul class="d-flex list-unstyled mb-0">
+          <li><a class="font-2-s" href="1 - index.html">Página Inicial</a></li>
+          <li><a class="font-2-s ativo" href="2 - quem somos.html" style="color: #ffd529;">Quem Somos</a></li>
+          <li><a class="font-2-s" href="3 - areas de atuacao.html">Áreas de Atuação</a></li>
+        </ul>
+      </nav>
+      <div class="fas fa-bars" id="menu-btn"></div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <div class="close-btn" id="close-btn">&times;</div> <!-- Adicionado botão de fechar -->
+      <ul class="sidebar-menu">
+        <li><a class="font-2-s" href="1 - index.html">Página Inicial</a></li>
+        <li><a class="font-2-s ativo" href="2 - quem somos.html" style="color: #ffd529;">Quem Somos</a></li>
+        <li><a class="font-2-s" href="3 - areas de atuacao.html">Áreas de Atuação</a></li>
+      </ul>
+    </div>
+
+    <style>
+      .quem-somos-bg {
+        background: url(https://th.bing.com/th/id/OIG2.KBpi4nhcIB7yZdbHAi8M?pid=ImgGn) no-repeat center;
+        background-size: auto;
+        background-size: cover;
+        position: relative;
+      }
+    </style>
+
+    <!---------------------------------------------------------------- SCRIPTS DE MENU ----------------------------------------------------------------->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var menuBtn = document.getElementById('menu-btn');
+        var sidebar = document.getElementById('sidebar');
+        var closeBtn = document.getElementById('close-btn');
+
+        menuBtn.addEventListener('click', function () {
+          sidebar.classList.toggle('active');
+        });
+
+        closeBtn.addEventListener('click', function () {
+          sidebar.classList.remove('active');
+        });
+
+        window.onscroll = function () {
+          sidebar.classList.remove('active');
+        };
+      });
+    </script>
+
+    <!---------------------------------------------------------------- ESTILOS DE MENU ----------------------------------------------------------------->
+    <style>
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        color: #fff;
+      }
+
+      .header a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .menu ul {
+        display: flex;
+        list-style: none;
+      }
+
+      .menu ul li {
+        margin: 0 10px;
+      }
+
+      #menu-btn {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      .sidebar {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        /* Alterado de left para right */
+        width: 250px;
+        height: 100%;
+        background-color: #000000;
+        color: #fff;
+        transition: right 0.3s ease;
+        /* Alterado de left para right */
+        z-index: 1000;
+      }
+
+      .close-btn {
+        font-size: 24px;
+        padding: 10px;
+        cursor: pointer;
+        text-align: right;
+        margin-right: 10px;
+      }
+
+      .sidebar-menu {
+        list-style: none;
+        padding: 20px;
+      }
+
+      .sidebar-menu li {
+        margin-bottom: 10px;
+      }
+
+      .sidebar-menu li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        border-radius: 4px;
+      }
+
+      .sidebar-menu li a:hover {
+        background-color: #46516a;
+      }
+
+      .sidebar.active {
+        right: 0;
+      }
+
+      @media (max-width: 910px) {
+        .menu {
+          display: none;
+        }
+
+        #menu-btn {
+          display: block;
+        }
+
+        .header {
+          justify-content: space-between;
+        }
+      }
+
+      @media (min-width: 911px) {
+        .header {
+          justify-content: center;
+        }
+
+        .header a.logo {
+          margin-right: auto;
+        }
+
+        .menu ul {
+          justify-content: center;
+        }
+      }
+    </style>
+
+    <!---------------------------------------------------------------- INICIO ----------------------------------------------------------------->
+    <main class="introducao">
+      <div class="introducao-conteudo">
+        <h1 class="fadeInDown cor-0 font-3-xxl">Uma história<br>de <span class="cor-p5">conquistas</span>.
+        </h1>
+      </div>
+    </main>
+  </div>
+
+  <article class="container conteudo-quem-somos">
+    <div>
+      <img src="https://th.bing.com/th/id/OIG2.FTpCSR0.ohFsq1XISNoE?pid=ImgGn"
+        alt="Imagem representativa de acordo entre cliente e advogado em um globo digital.">
+    </div>
+    <div class="cor-azul-escuro">
+      <h2 class="cor-azul-escuro font-1-xl">NOSSA HISTÓRIA<span class="cor-p5">.</span></h2>
+
+      <p> A história do escritório R.V.L ADVOGADOS ASSOCIADOS é marcada pela dedicação dos sócios fundadores,
+        Dr. Ademir Lemos Rocha, Dr. Fabricio Jose Correa Luciano e Dr. Alexsandro Luciano Vidal. Com experiência no
+        consultivo e contencioso empresarial,
+        o escritório destaca-se pela qualidade técnica e eficácia no atendimento jurídico.
+      </p>
+      <p class="cor-azul-escuro">
+        Desde sua fundação, tem se empenhado em oferecer serviços jurídicos de alta qualidade, com uma equipe capacitada
+        e especializada em diversas áreas do direito.
+      </p>
+      <p class="cor-azul-escuro">
+        O compromisso contínuo com a inovação e o acompanhamento das tendências dos tribunais são características da sua
+        trajetória, sempre visando alcançar os melhores resultados para os clientes.
+      </p>
+    </div>
+
+  </article>
+
+  <!---------------------------------------------------------------- QUEM SOMOS ----------------------------------------------------------------->
+  <main class="introducao" id="conhecanos">
+    <h3 class="cor-azul-escuro font-1-xl">Conheça-nos<span class="cor-p5">.</span></h3>
+    <div class="caixas-container">
+      <div class="card-client">
+        <div class="user-picture">
+          <img src="img/PESSOAS/fabricio.png" alt="Dr. Fabricio Luciano">
+        </div>
+
+            <!------------------------------- FABRICIO -------------------------------->
+        <p class="nomeadvg"> Dr. Fabricio Luciano
+          <span>Direito Trabalhista, Direito Médico, Direito de Familia e Sucessões.</span>
+        </p>
+        <div class="social-media">
+          <a href="https://api.whatsapp.com/send/?phone=5511917412180&text&type=phone_number&app_absent=0">
+            <i class="fab fa-whatsapp fa-2x"></i>
+            <span class="tooltip-social">WhatsApp</span>
+          </a>
+          <a href="mailto:fabricioluc.adv@gmail.com">
+            <i class="far fa-envelope email-icon fa-2x"></i>
+            <span class="tooltip-social">Email</span>
+          </a>
+        </div>
+      </div>
+
+          <!------------------------------- ADEMIR -------------------------------->
+      <div class="card-client">
+        <div class="user-picture">
+          <img src="img/PESSOAS/ademir.png" alt="Dr. Ademir Rocha">
+        </div>
+        <p class="nomeadvg"> Dr. Ademir Rocha
+          <span>Direito Trabalhista, Direito Civil, Direito
+            Tributário, Direito Penal e Direito Previdenciário.</span>
+        </p>
+        <div class="social-media">
+          <a href="https://api.whatsapp.com/send/?phone=5511964200876&text&type=phone_number&app_absent=0">
+            <i class="fab fa-whatsapp fa-2x"></i>
+            <span class="tooltip-social">WhatsApp</span>
+          </a>
+          <a href="mailto:ademir.rocha@lemosrochaadvogados.com.br">
+            <i class="far fa-envelope email-icon fa-2x"></i>
+            <span class="tooltip-social">Email</span>
+          </a>
+        </div>
+      </div>
+
+    <!------------------------------- ALEXSANDRO -------------------------------->
+      <div class="card-client">
+        <div class="user-picture">
+          <img src="img/PESSOAS/alexsandro.png" alt="Dr. Alexsandro Vidal">
+        </div>
+        <p class="nomeadvg"> Dr. Alexsandro Vidal
+          <span>Direito Trabalhista, Direito do Consumidor e Direito
+            Empresarial.</span>
+        </p>
+        <div class="social-media">
+          <a href="https://api.whatsapp.com/send/?phone=5511964862905&text&type=phone_number&app_absent=0">
+            <i class="fab fa-whatsapp fa-2x"></i>
+            <span class="tooltip-social">WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!---------------------------------------------------------------- ESTILOS QUEM SOMOS ----------------------------------------------------------------->
+  <style>
+    h3 {
+      background: url(img/DECORACOES/bottom-right.svg) no-repeat top 40px right 20px;
+    }
+
+    .introducao {
+      text-align: center;
+    }
+
+    .caixas-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card-client {
+      background: #eeeeee;
+      width: 100%;
+      max-width: 500px;
+      padding: 25px;
+      box-shadow: 0 6px 10px #212121;
+      border-radius: 10px;
+      text-align: center;
+      color: #333;
+      font-family: "Raleway", sans-serif;
+      transition: all 0.3s ease;
+    }
+
+    .user-picture {
+      overflow: hidden;
+      object-fit: cover;
+      width: 10rem;
+      height: 10rem;
+      border: 3px solid #fff;
+      border-radius: 999px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+
+    .user-picture img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .nomeadvg {
+      margin-top: 20px;
+      font-weight: 600;
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+    }
+
+    .nomeadvg span {
+      display: block;
+      font-weight: 200;
+      font-size: 16px;
+      text-transform: initial;
+      font-weight: 400;
+      font-family: "Raleway", sans-serif;
+    }
+
+    .social-media:before {
+      content: " ";
+      display: block;
+      width: 100%;
+      height: 2px;
+      margin: 20px 0;
+      background: #333;
+    }
+
+    .social-media a {
+      position: relative;
+      margin-right: 15px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .social-media a:last-child {
+      margin-right: 0;
+    }
+
+    .social-media a svg {
+      width: 1.1rem;
+      fill: currentColor;
+    }
+
+    .tooltip-social {
+      background: #262626;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      padding: 0.5rem 0.4rem;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      opacity: 0;
+      pointer-events: none;
+      transform: translate(-50%, -90%);
+      transition: all 0.2s ease;
+      z-index: 1;
+      color: white;
+    }
+
+    .tooltip-social:after {
+      content: " ";
+      position: absolute;
+      bottom: 1px;
+      left: 50%;
+      border: solid;
+      border-width: 10px 10px 0 10px;
+      border-color: transparent;
+      transform: translate(-50%, 100%);
+    }
+
+    .social-media a .tooltip-social:after {
+      border-top-color: #262626;
+    }
+
+    .social-media a:hover .tooltip-social {
+      opacity: 1;
+      transform: translate(-50%, -130%);
+    }
+
+    @media (max-width: 910px) {
+      .card-client {
+        max-width: 300px;
+      }
+    }
+  </style>
+
+  <!---------------------------------------------------------------- PRINCIPAIS CLIENTES ----------------------------------------------------------------->
+  <article class="clientes-principais container">
+    <div class="nosso-diferencial-titulo">
+      <h3 class="cor-azul-escuro font-1-xl">PRINCIPAIS CLIENTES<span class="cor-p5">.</span></h3>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+      <div class="carousel-inner">
+        <!-- Primeiro grupo de 4 caixas -->
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+
+              <li class="col-md-4">
+                <img width="90px" height="90px" src="img/CLIENTES/AUTO.png" alt="ASTRO MULTIMARCAS" class="clientes">
+                <span class="cor-azul-escuro font-1-m-b">ASTRO MULTIMARCAS</span>
+              </li>
+
+              <li class="col-md-4">
+                <img width="90px" height="79px"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxDWSKjFef1p_zUi64Vake7WN7kHpkX45B8g&s"
+                  alt="AUTO SHOPPING IMIGRANTES" class="clientes">
+                <span class="cor-azul-escuro font-1-m-b">AUTO SHOPPING IMIGRANTES</span>
+              </li>
+
+              <li class="col-md-4">
+                <img width="90px" height="90px" src="img/CLIENTES/BRASA.png" alt="BRASA MOTORS" class="clientes">
+                <span class="cor-azul-escuro font-1-m-b">BRASA MOTORS</span>
+              </li>
+
+              <li class="col-md-4">
+                <img width="90px" height="90px" src="img/CLIENTES/GASTRO.png" alt="CLINICA MEDICA PAULO MAIA (GASTRO)"
+                  class="clientes">
+                <span class="cor-azul-escuro font-1-m-b">CLÍNICA MÉDICA PAULO MAIA (GASTRO)</span>
+              </li>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Segundo grupo de 4 caixas -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+
+              <li class="col-md-4">
+                <img width="90px" height="90px" src="img/CLIENTES/FATTO.png" alt="FATTOTELECOM LTDA" class="clientes">
+                <span class="cor-azul-escuro font-1-m-b">FATTOTELECOM LTDA</span>
+              </li>
+
+              <li class="col-md-4">
+                <img width="90px" height="90px"
+                  src="https://media.licdn.com/dms/image/D4D0BAQGTgfnAx-BdNA/company-logo_200_200/0/1690983991370/fischer_corretora_de_seguros_logo?e=2147483647&v=beta&t=WQ48FjiSye61kFx-bFcqAPnYz-73BoSaXmMUmwO6I0w"
+                  alt="FICHER CORRETORA DE SEGUROS" class="clientes">
+                <span class="cor-azul-escuro font-1-m-b">FICHER CORRETORA DE SEGUROS</span>
+              </li>
+
+              <li class="col-md-4">
+                <img width="90px" height="90px" src="img/CLIENTES/GSM.png" alt="GSM BRASIL LTDA" class="clientes">
+                <span class="cor-azul-escuro font-1-m-b">GSM BRASIL LTDA</span>
+              </li>
+
+              <li class="col-md-4">
+                <img width="90px" height="90px" src="img/CLIENTES/NEGOCIO.png"
+                  alt="NEGÓCIO SOB MEDIDA CONSULTORIA TÉCNICA" class="clientes">
+                <span class="cor-azul-escuro font-1-m-b">NEGÓCIO SOB MEDIDA CONSULTORIA TÉCNICA</span>
+              </li>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- terceiro grupo de 4 caixas -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+
+              <li class="col-md-4">
+                <img width="90px" height="90px" src="img/CLIENTES/PLAYARTE.png" alt="PLAYARTE CINEMAS" class="clientes">
+                <span class="cor-azul-escuro font-1-m-b">PLAYARTE CINEMAS</span>
+              </li>
+
+              <li class="col-md-4"><br>
+                <img width="90px" height="90px" src="img/CLIENTES/PLUSCAR.png" alt="PLUS CAR MULTIMARCAS"
+                  class="clientes"><br><br><br>
+                <span class="cor-azul-escuro font-1-m-b">PLUS CAR MULTIMARCAS</span>
+              </li>
+
+              <li class="col-md-4">
+                <img width="90px" height="90px" src="img/CLIENTES/RB.png" alt="RB MULTIMARCAS LTDA" class="clientes">
+                <span class="cor-azul-escuro font-1-m-b">RB MULTIMARCAS LTDA</span>
+              </li>
+
+              <li class="col-md-4">
+                <img width="90px" height="90px" src="img/CLIENTES/RECONNECT.png" alt="RECONNECT MULTIMARCAS LTDA"
+                  class="clientes">
+                <span class="cor-azul-escuro font-1-m-b">RECONNECT MULTIMARCAS LTDA</span>
+              </li>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- QUARTO grupo de 4 caixas -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+
+              <li class="col-md-4">
+                <img width="90px" height="90px" src="img/CLIENTES/ROUTE.png" alt="ROUTE MULTIMARCAS" class="clientes">
+                <span class="cor-azul-escuro font-1-m-b">ROUTE MULTIMARCAS</span>
+              </li>
+
+              <li class="col-md-4">
+                <img width="90px" height="90px" src="img/CLIENTES/INSTA.png" alt="INSTA MOTORS" class="clientes">
+                <span class="cor-azul-escuro font-1-m-b">INSTA MOTORS</span>
+              </li>
+
+              <li class="col-md-4">
+                <img width="90px" height="90px" src="img/CLIENTES/UNIARTE.png" alt="UNIARTE METALURGICA"
+                  class="clientes">
+                <span class="cor-azul-escuro font-1-m-b">UNIARTE METALURGICA</span>
+              </li>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.carousel').carousel({
+          interval: 1500
+        });
+      });
+    </script>
+  </article><br><br>
+
+
+  <!---------------------------------------------------------------- MISSAO VISAO E VALORES ----------------------------------------------------------------->
+  <main class="introducao">
+    <div class="nosso-diferencial-titulo">
+      <h3 class="cor-azul-escuro font-1-xl">Nossos objetivos<span class="cor-p5">.</span></h3>
+    </div>
+
+    <!-- Novas caixas para Missão, Visão e Valores -->
+    <div class="caixas-container">
+      <div class="caixa">
+        <i class="fas fa-rocket"></i>
+        <h2>Missão</h2>
+        <p>Ajudar a resolver problemas legais, garantindo que todos tenham seus direitos e deveres respeitados.</p>
+      </div>
+
+      <div class="caixa">
+        <i class="fas fa-eye"></i>
+        <h2>Visão</h2>
+        <p>Ser reconhecido por proteger os direitos das pessoas e empresas, promovendo um mundo mais justo e
+          sustentável.</p>
+      </div>
+
+      <div class="caixa">
+        <i class="fas fa-balance-scale"></i>
+        <h2>Valores</h2>
+        <p>Trabalhar com ética, justiça, responsabilidade social e sustentabilidade, garantindo segurança nas ações
+          jurídicas.</p>
+      </div>
+    </div>
+  </main>
+
+  <!---------------------------------------------------------------- ESTILOS MISSAO VISAO E VALORES ----------------------------------------------------------------->
+<style>
+  /* Estilização das caixas de Missão, Visão e Valores */
+.caixas-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+
+.caixa {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 30%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.6s ease-in-out;
+  margin-bottom: 20px; /* Add margin bottom for spacing */
+}
+
+.caixa:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.caixa h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.caixa p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Estilização dos ícones */
+.icone-missao,
+.icone-visao,
+.icone-valores {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.icone-missao {
+  background-image: url('path/to/missao-icon.png');
+}
+
+.icone-visao {
+  background-image: url('path/to/visao-icon.png');
+}
+
+.icone-valores {
+  background-image: url('path/to/valores-icon.png');
+}
+
+/* Animação */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.font-1-xl {
+  margin-top: 2%;
+}
+
+@media (max-width: 768px) {
+  .caixa {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .caixa {
+    width: 100%;
+  }
+}
+
+</style>
+
+  <!---------------------------------------------------------------- RODAPÉ ----------------------------------------------------------------->
+  <footer>
+    <div class="footer container">
+      <div class="footer-conteudo">
+        <span class="font-1-s cor-azul-escuro">CONTEÚDO</span>
+        <ul>
+          <li><a class="font-1-xs cor-azul-claro" href="1 - index.html">Página Inicial</a></li>
+          <li><a class="font-1-xs cor-azul-claro" href="2 - quem somos.html">Quem Somos</a></li>
+          <li><a class="font-1-xs cor-azul-claro" href="3 - areas de atuacao.html">Áreas de Atuação</a></li>
+        </ul>
+        <ul id="footer-contato-redes">
+          <li>
+            <a href="https://www.facebook.com/RVLAdvogadosassociados"><img width="11px" height="11px"
+                src="img/ICONES/facebook.svg" alt="Facebook"></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/rvladvogadosassociados/"><img width="19px" height="15px"
+                src="img/ICONES/Instagram.svg" alt="Instagram"></a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="footer-contato">
+        <span class="font-1-s cor-azul-escuro">CONTATO</span>
+        <ul>
+          <li><a class="font-1-xs cor-azul-claro" href="mailto:adv_contato@rvladvogados.com.br">
+              <img width="20px" height="15px" src="img/ICONES/email.svg" alt="Email">
+              <span>adv_contato@rvladvogados.com.br</span></a></li>
+
+
+          <li><a class="font-1-xs cor-azul-claro"
+              href="https://api.whatsapp.com/send/?phone=5511914657714&text&type=phone_number&app_absent=0">
+              <img width="20px" height="20px" src="img/ICONES/phone.svg"
+                alt="Telefone de contato"><span>(11)91465-7714</span></a></li>
+
+          <li><a class="font-1-xs cor-azul-claro">
+              <img width="20px" height="20px" src="img/ICONES/tempo.png"><span>09h - 17h | Seg à Sex</span></a></li>
+
+
+          <li><a class="font-1-xs cor-azul-claro"
+              href="https://www.google.com/maps/place/Estr.+das+L%C3%A1grimas,+20+-+Rudge+Ramos,+S%C3%A3o+Bernardo+do+Campo+-+SP,+09642-000/@-23.648646,-46.577191,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce43abf893e4ed:0x80380023e68c6a5a!8m2!3d-23.648646!4d-46.577191!16s%2Fg%2F11vq7rhs23?entry=ttu">
+              <img width="16px" height="19px" src="img/ICONES/mark.svg" alt="Localização"><span>Estr. das Lágrimas, 20 -
+                Rudge Ramos, São Bernardo do Campo - SP, 09642-000 </span></a></li>
+
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-copy container">
+
+      <p class="font-1-xs">Copyright © 2024 </p>
+      <p style="font-size: 12px;">Desenvolvido por: <a href="" class="desenvolvimento">Carolina Ladeia</a></p>
+      <p style="font-size: 12px;">Design original: <a href="https://www.brcradvogados.com.br/" class="desenvolvimento">BRCR Advogados</a> | <a
+          href="https://www.luanramos.com.br/index.html" class="desenvolvimento"> Luan Ramos</a></p>
+      <p class="font-1-xs">Todos os Direitos Reservados</p>
+
+    </div>
+
+  </footer>
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>

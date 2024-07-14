@@ -1,0 +1,74 @@
+.main-bg {
+  background: url(https://th.bing.com/th/id/OIG4..kQTFQuMnSkICID0bGMn?pid=ImgGn) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.main-bg::after {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.84);
+}
+
+.introducao {
+  display: grid;
+  place-items: center;
+  padding: 90px 0;
+  text-align: center;
+  position: relative;
+  padding: 180px;
+}
+
+.introducao-conteudo {
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  margin-top: 100px;
+}
+
+.introducao-conteudo p {
+  margin: 40px;
+  font-size: 170%;
+  font-family: "Raleway", sans-serif;
+}
+
+.introducao-conteudo a {
+  margin-top: 200px;
+  text-transform: uppercase;
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .introducao {
+    padding: 60px 0;
+    margin-top: 0px;
+  }
+  
+  .introducao-conteudo a {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-bg {
+    background: url(https://img.freepik.com/fotos-gratis/visao-de-escalas-de-justica-3d_23-2151228148.jpg?t=st=1719104663~exp=1719108263~hmac=03e785d5874a4ba11cbf5fe8953eaf156bea0ac21ff264fa67a01b121e47b215&w=1480) center center
+      no-repeat;
+    background-size: cover;
+  }
+
+  .introducao {
+    padding: 0px 0;
+    padding-bottom: 10px;
+  }
+
+  .introducao-conteudo a {
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+}
+
+

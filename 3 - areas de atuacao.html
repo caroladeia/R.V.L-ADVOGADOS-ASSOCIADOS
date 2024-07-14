@@ -1,0 +1,505 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <!------------------------------------- Dar atençao aqui -------------------------------->
+  <title>ÁREAS DE ATUAÇÃO | RVL ADVOGADOS ASSOCIADOS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="imagex/png" href="img/LOGOS/logo.png">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+    defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+</head>
+
+<!---------------------------------------------------------------- MENU ----------------------------------------------------------------->
+
+<body>
+  <div class="quem-somos-bg">
+    <header id="scrollar" class="header container active">
+      <a href="1 - index.html">
+        <img class="logo" width="100px" src="img/logos/logo.png" alt="Logo RVL">
+      </a>
+      <nav class="menu">
+        <ul class="d-flex list-unstyled mb-0">
+          <li><a class="font-2-s" href="1 - index.html">Página Inicial</a></li>
+          <li><a class="font-2-s" href="2 - quem somos.html">Quem Somos</a></li>
+          <li><a class="font-2-s ativo" href="3 - areas de atuacao.html" style="color: #ffd529;">Áreas de Atuação</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="fas fa-bars" id="menu-btn"></div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <div class="close-btn" id="close-btn">&times;</div> <!-- Adicionado botão de fechar -->
+      <ul class="sidebar-menu">
+        <li><a class="font-2-s" href="1 - index.html">Página Inicial</a></li>
+        <li><a class="font-2-s" href="2 - quem somos.html">Quem Somos</a></li>
+        <li><a class="font-2-s ativo" href="3 - areas de atuacao.html" style="color: #ffd529;">Áreas de Atuação</a></li>
+      </ul>
+    </div>
+
+    <a href="1 - index.html#contact" class="contact-button">
+      <i class="fas fa-envelope"></i> Contate-nos
+    </a>
+
+    <style>
+      .quem-somos-bg {
+        background: url(https://th.bing.com/th/id/OIG1.DZD3PnPcXP1S_T5cA90x?pid=ImgGn) no-repeat center;
+        background-size: auto;
+        background-size: cover;
+        position: relative;
+      }
+
+      .contact-button {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background-color: #606c88;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        padding: 15px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        z-index: 1000;
+        transition: background-color 0.3s;
+      }
+
+      .contact-button:hover {
+        background-color: #46516a;
+      }
+
+      .contact-button i {
+        margin-right: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .contact-button {
+          font-size: 14px;
+          padding: 10px;
+        }
+
+        .contact-button i {
+          margin-right: 5px;
+        }
+
+        .introducao-conteudo p {
+          font-size: 15px;
+        }
+      }
+    </style>
+
+    <!---------------------------------------------------------------- SCRIPTS DE MENU ----------------------------------------------------------------->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var menuBtn = document.getElementById('menu-btn');
+        var sidebar = document.getElementById('sidebar');
+        var closeBtn = document.getElementById('close-btn');
+
+        menuBtn.addEventListener('click', function () {
+          sidebar.classList.toggle('active');
+        });
+
+        closeBtn.addEventListener('click', function () {
+          sidebar.classList.remove('active');
+        });
+
+        window.onscroll = function () {
+          sidebar.classList.remove('active');
+        };
+      });
+    </script>
+
+    <!---------------------------------------------------------------- ESTILOS DE MENU ----------------------------------------------------------------->
+    <style>
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        color: #fff;
+      }
+
+      .header a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .menu ul {
+        display: flex;
+        list-style: none;
+      }
+
+      .menu ul li {
+        margin: 0 10px;
+      }
+
+      #menu-btn {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      .sidebar {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        /* Alterado de left para right */
+        width: 250px;
+        height: 100%;
+        background-color: #000000;
+        color: #fff;
+        transition: right 0.3s ease;
+        /* Alterado de left para right */
+        z-index: 1000;
+      }
+
+      .close-btn {
+        font-size: 24px;
+        padding: 10px;
+        cursor: pointer;
+        text-align: right;
+        margin-right: 10px;
+      }
+
+      .sidebar-menu {
+        list-style: none;
+        padding: 20px;
+      }
+
+      .sidebar-menu li {
+        margin-bottom: 10px;
+      }
+
+      .sidebar-menu li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        border-radius: 4px;
+      }
+
+      .sidebar-menu li a:hover {
+        background-color: #46516a;
+      }
+
+      .sidebar.active {
+        right: 0;
+        /* Alterado de left para right */
+      }
+
+      @media (max-width: 910px) {
+        .menu {
+          display: none;
+        }
+
+        #menu-btn {
+          display: block;
+        }
+
+        .header {
+          justify-content: space-between;
+        }
+      }
+
+      @media (min-width: 911px) {
+        .header {
+          justify-content: center;
+        }
+
+        .header a.logo {
+          margin-right: auto;
+        }
+
+        .menu ul {
+          justify-content: center;
+        }
+      }
+    </style>
+
+    <!---------------------------------------------------------------- INÍCIO ----------------------------------------------------------------->
+    <main class="introducao">
+      <div class="introducao-conteudo">
+        <h1 class="fadeInDown cor-0 font-3-xxl">Conheça as nossas<br><span class="cor-p5">áreas de atuação</span>.</h1>
+        <p class="fadeInDown cor-cinza-escuro font-2-l">Pesquise sobre algum tipo de direito no qual atuamos.</p>
+      </div>
+    </main>
+  </div>
+
+  <!---------------------------------------------------------------- BARRA DE PESQUISA ----------------------------------------------------------------->
+  <div class="search">
+    <label for="searchInput">
+      <span class="material-symbols-outlined"> search </span>
+    </label>
+
+    <input type="text" id="searchInput" placeholder="Pesquisar">
+  </div>
+
+  <div class="caixinhas">
+    <div class="cartoes">
+      <img src="" alt="" class="areasimg">
+      <h3 class="tituloareas">Título</h3>
+      <p class="textinho">Descrição</p>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<!---------------------------------------------------------------- ESTILOS DE PESQUISA ----------------------------------------------------------------->
+<style>
+  /* -------------------- FONTES -------------------- */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  /*  font-family: "Montserrat", sans-serif;  */
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+  /*  font-family: "Raleway", sans-serif;  */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    background-color: rgba(174, 174, 174, 0.48);
+    width: 400px;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: gray;
+  }
+
+  #searchInput {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+  }
+
+  .search label {
+    height: 20px;
+  }
+
+  .caixinhas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cartoes {
+    width: 500px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 8px rgb(0, 0, 0, 0.1);
+  }
+
+  .areasimg {
+    width: 458px;
+    height: 300px;
+    margin-bottom: 2%;
+    border-radius: 10px;
+  }
+
+  .tituloareas {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 1%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .textinho {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+  }
+
+  @media (max-width: 1100px) {
+    .cartoes {
+      width: 300px;
+    }
+
+    .areasimg {
+      width: 258px;
+      height: 200px;
+    }
+  }
+</style>
+
+<!---------------------------------------------------------------- SCRIPT DE PESQUISA ----------------------------------------------------------------->
+<script>
+  const data = [
+    {
+      img: "https://th.bing.com/th/id/OIG1.LNqVsKMNFG2TEiuGMi8X?pid=ImgGn",
+      title: "Direito Civil",
+      description: "Direito Civil trata das relações jurídicas entre indivíduos, abrangendo questões como contratos, responsabilidade civil, família, sucessões e direitos reais, buscando equilibrar os interesses privados."
+    },
+    {
+      img: "https://th.bing.com/th/id/OIG1.ASpe5iHDd2oh6AkEV30Q?pid=ImgGn",
+      title: "Direito Imobiliário",
+      description: "Direito Imobiliário envolve transações e litígios relacionados a imóveis, incluindo compra, venda, locação, usucapião e direitos de vizinhança, assegurando a legalidade e segurança jurídica das operações."
+    },
+    {
+      img: "https://th.bing.com/th/id/OIG2.fXohIxV8ooNO9Q.sCofj?pid=ImgGn",
+      title: "Direito Médico",
+      description: "Direito Médico regula a relação entre profissionais de saúde, pacientes e instituições, abordando questões como responsabilidade médica, consentimento informado, e ética profissional para proteger direitos e deveres."
+    },
+    {
+      img: "https://th.bing.com/th/id/OIG4.avSf1_QeMqeV3AgVdqs7?w=1024&h=1024&rs=1&pid=ImgDetMain",
+      title: "Direito Trabalhista",
+      description: "Direito Trabalhista regula as relações de trabalho, abrangendo direitos e deveres de empregados e empregadores, incluindo normas sobre contratação, jornada, remuneração, condições de trabalho e rescisão de contrato."
+    },
+    {
+      img: "https://th.bing.com/th/id/OIG1.6b2vA6MBT8txmCvmEUwJ?pid=ImgGn",
+      title: "Direito Tributário e Fiscal",
+      description: "Direito Tributário e Fiscal trata da arrecadação de tributos pelo Estado, regulamentando impostos, taxas e contribuições, e estabelecendo obrigações fiscais dos contribuintes, garantindo justiça tributária."
+    },
+    {
+      img: "https://th.bing.com/th/id/OIG2.p9YnSerJ5IKvXRTES7Lt?w=1024&h=1024&rs=1&pid=ImgDetMain",
+      title: "Direito Ambiental",
+      description: "Direito Ambiental busca proteger o meio ambiente, regulando atividades humanas para prevenir e remediar danos ambientais, promovendo sustentabilidade e equilibrando desenvolvimento econômico com preservação ecológica."
+    },
+    {
+      img: "https://th.bing.com/th/id/OIG3.91oPyybtYmrMZD24HhF.?pid=ImgGn",
+      title: "Direito de Agronegócio",
+      description: "Direito de Agronegócio abrange normas relacionadas à produção agrícola, comercialização e industrialização de produtos agropecuários, tratando de questões fundiárias, contratos agrários, políticas agrícolas e financiamentos."
+    },
+    {
+      img: "https://th.bing.com/th/id/OIG4.Q1K2PzHfC9tfSkhmI8Vh?pid=ImgGn",
+      title: "Direito de Propriedade Intelectual",
+      description: "Direito de Propriedade Intelectual protege criações intelectuais, como invenções, marcas, obras literárias e artísticas, garantindo aos criadores direitos exclusivos de uso, exploração e comercialização de suas criações."
+    },
+    {
+      img: "https://th.bing.com/th/id/OIG2.CqfgrqX1q_LBXmNygNev?pid=ImgGn",
+      title: "Direito Constitucional",
+      description: "Direito Constitucional estabelece os princípios e normas fundamentais do Estado, organizando a estrutura do governo, distribuindo competências e protegendo os direitos e garantias individuais e coletivos dos cidadãos."
+    },
+    {
+      img: "https://th.bing.com/th/id/OIG3.AGHHrlP.4AyqH60HB0dK?w=1024&h=1024&rs=1&pid=ImgDetMain",
+      title: "Direito Administrativo",
+      description: "Direito Administrativo disciplina a atuação da administração pública, regulando suas relações com os particulares, os serviços públicos, contratos administrativos, servidores públicos e controle dos atos administrativos."
+    },
+    {
+      img: "https://th.bing.com/th/id/OIG3.tCFmzWT8im7.7vOD9L33?pid=ImgGn",
+      title: "Direito Penal",
+      description: "Direito Penal define crimes e penas, estabelecendo normas para a repressão de condutas ilícitas, protegendo a sociedade e garantindo a aplicação justa da lei penal, respeitando os direitos fundamentais dos acusados."
+    },
+    {
+      img: "https://th.bing.com/th/id/OIG3.0XYvsMBZAZYNcFMjBVt0?pid=ImgGn",
+      title: "Direito de Responsabilidade Social",
+      description: "Direito de Responsabilidade Social incentiva práticas empresariais responsáveis, promovendo ações que beneficiem a sociedade e o meio ambiente, alinhando as atividades corporativas com os princípios de sustentabilidade e ética."
+    }
+  ];
+
+  const cartoesContainer = document.querySelector(".caixinhas");
+  const searchInput = document.querySelector("#searchInput");
+
+  const displayData = (data) => {
+    cartoesContainer.innerHTML = "";
+    data.forEach(e => {
+      cartoesContainer.innerHTML += `
+      <div class="cartoes">
+          <img src="${e.img}" alt="Imagem ${e.title}" class="areasimg">
+          <h3 class="tituloareas">${e.title}</h3>
+          <p class="textinho">${e.description}</p>
+      </div>
+      `;
+    });
+  };
+
+  searchInput.addEventListener("keyup", (e) => {
+    const search = data.filter(i => i.title.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()));
+    displayData(search);
+  });
+
+  window.addEventListener("load", displayData.bind(null, data));
+
+</script>
+
+  <!---------------------------------------------------------------- RODAPÉ ----------------------------------------------------------------->
+  <footer>
+    <div class="footer container">
+      <div class="footer-conteudo">
+        <span class="font-1-s cor-azul-escuro">CONTEÚDO</span>
+        <ul>
+          <li><a class="font-1-xs cor-azul-claro" href="1 - index.html">Página Inicial</a></li>
+          <li><a class="font-1-xs cor-azul-claro" href="2 - quem somos.html">Quem Somos</a></li>
+          <li><a class="font-1-xs cor-azul-claro" href="3 - areas de atuacao.html">Áreas de Atuação</a></li>
+        </ul>
+        <ul id="footer-contato-redes">
+          <li>
+            <a href="https://www.facebook.com/RVLAdvogadosassociados"><img width="11px" height="11px"
+                src="img/ICONES/facebook.svg" alt="Facebook"></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/rvladvogadosassociados/"><img width="19px" height="15px"
+                src="img/ICONES/Instagram.svg" alt="Instagram"></a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="footer-contato">
+        <span class="font-1-s cor-azul-escuro">CONTATO</span>
+        <ul>
+          <li><a class="font-1-xs cor-azul-claro" href="mailto:adv_contato@rvladvogados.com.br">
+              <img width="20px" height="15px" src="img/ICONES/email.svg" alt="Email">
+              <span>adv_contato@rvladvogados.com.br</span></a></li>
+
+
+          <li><a class="font-1-xs cor-azul-claro"
+              href="https://api.whatsapp.com/send/?phone=5511914657714&text&type=phone_number&app_absent=0">
+              <img width="20px" height="20px" src="img/ICONES/phone.svg"
+                alt="Telefone de contato"><span>(11)91465-7714</span></a></li>
+
+          <li><a class="font-1-xs cor-azul-claro">
+              <img width="20px" height="20px" src="img/ICONES/tempo.png"><span>09h - 17h | Seg à Sex</span></a></li>
+
+
+          <li><a class="font-1-xs cor-azul-claro"
+              href="https://www.google.com/maps/place/Estr.+das+L%C3%A1grimas,+20+-+Rudge+Ramos,+S%C3%A3o+Bernardo+do+Campo+-+SP,+09642-000/@-23.648646,-46.577191,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce43abf893e4ed:0x80380023e68c6a5a!8m2!3d-23.648646!4d-46.577191!16s%2Fg%2F11vq7rhs23?entry=ttu">
+              <img width="16px" height="19px" src="img/ICONES/mark.svg" alt="Localização"><span>Estr. das Lágrimas, 20 -
+                Rudge Ramos, São Bernardo do Campo - SP, 09642-000 </span></a></li>
+
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-copy container">
+
+      <p class="font-1-xs">Copyright © 2024 </p>
+      <p style="font-size: 12px;">Desenvolvido por: <a href="" class="desenvolvimento">Carolina Ladeia</a></p>
+      <p style="font-size: 12px;">Design original: <a href="https://www.brcradvogados.com.br/" class="desenvolvimento">BRCR Advogados</a> | <a
+          href="https://www.luanramos.com.br/index.html" class="desenvolvimento"> Luan Ramos</a></p>
+      <p class="font-1-xs">Todos os Direitos Reservados</p>
+
+    </div>
+
+  </footer>
+
+  <style>
+    footer {
+      margin-top: 2%;
+    }
+  </style>

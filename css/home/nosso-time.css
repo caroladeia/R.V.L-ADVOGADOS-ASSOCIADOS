@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.nosso-time {
+  padding: 40px 0;
+  background: url(../../img/decoracoes/top-left-p.svg) no-repeat top 100px left 100px;
+  display: grid;
+}
+
+.nosso-time h2 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.nosso-time > a {
+  place-self: center;
+}
+
+.nosso-time-carrossel {
+  padding: 60px;
+  display: flex;
+  gap: 48px;
+  position: relative;
+  overflow-y: hidden;
+  text-align: center;
+  flex-wrap: nowrap;
+}
+
+.nosso-time-carrossel-img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0));
+  position: relative;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  margin: 0 auto;
+}
+
+.nosso-time-carrossel-img a {
+  margin-top: 60px;
+  max-width: 90px;
+  place-self: center;
+}
+
+.nosso-time-carrossel-img:hover {
+  transform: scale(1.2);
+}
+
+.nosso-time-carrossel-img:hover::after {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.949);
+}
+
+.nosso-time-carrossel-img img {
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  position: relative;
+}
+
+#nosso-time-descricao {
+  cursor: default;
+  display: none;
+}
+
+.nosso-time-carrossel-img:hover #nosso-time-descricao {
+  display: grid;
+  width: 250px;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.conheca {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .nosso-time-carrossel-img:after {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url(../../img/icones/mostrar-mais-botao.svg);
+    background-size: 2rem;
+    background-position: top 20px right 20px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+  }
+
+  .nosso-time {
+    padding: 60px 0;
+    background: none;
+  }
+
+  .nosso-time h2 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nosso-time {
+    padding: 20px 0;
+    background: none;
+  }
+
+  .nosso-time h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+
+  .nosso-time-carrossel {
+    padding: 20px;
+    gap: 20px;
+    overflow-x: scroll;
+  }
+
+  .nosso-time-carrossel::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .nosso-time-carrossel::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+  }
+
+  .nosso-time-carrossel::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .nosso-time-carrossel-img img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  #nosso-time-descricao {
+    width: 150px;
+  }
+
+  .conheca {
+    display: flex;
+    color: rgb(0, 0, 0);
+    max-width: 200px;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+    border-radius: 5px;
+  }
+
+  .conheca:hover {
+    color: #ffbb00;
+  }
+}
